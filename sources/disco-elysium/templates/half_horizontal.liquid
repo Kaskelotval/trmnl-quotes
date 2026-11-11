@@ -1,0 +1,38 @@
+{% assign speaker = quote.speaker %}
+{% if quote.type == "exchange" %}
+  {% assign speaker = quote.primary_speaker %}
+{% endif %}
+{% assign portrait_url = speaker.image %}
+{% if portrait_url contains "../images/" %}
+  {% assign portrait_path = portrait_url | remove_first: "../" %}
+  {% capture portrait_url %}https://raw.githubusercontent.com/Kaskelotval/trmnl-quotes/main/sources/disco-elysium/{{ portrait_path }}{% endcapture %}
+{% endif %}
+<style>
+  .portrait { width: 140px; height: 140px; object-fit: cover; margin: auto; }
+  .portrait-col { width: 28%; }
+  .quote-col { width: 72%; }
+  .quote-text { font-size: 20px; font-weight: 600; line-height: 1.2; white-space: pre-wrap; }
+</style>
+<div class="layout">
+  <div class="columns" style="padding: 1.5em; align-items: center;">
+    {% if portrait_url %}
+      <div class="column portrait-col">
+        <img class="image portrait" src="{{ portrait_url }}" alt="{{ speaker.name | escape }}">
+      </div>
+    {% endif %}
+    <div class="column quote-col" style="{% unless portrait_url %}width: 100%;{% endunless %}">
+      <div class="markdown">
+        <div class="content quote-text">
+          {% if quote.type == "exchange" %}
+            {% for line in quote.lines %}
+              <p><strong>{{ line.speaker.name | escape }}:</strong> {{ line.text | escape }}</p>
+            {% endfor %}
+          {% else %}
+            {{ quote.text | escape }}
+          {% endif %}
+        </div>
+        <span class="label" style="display: block; margin-top: 6px;">— {{ speaker.name | escape }}</span>
+      </div>
+    </div>
+  </div>
+</div>

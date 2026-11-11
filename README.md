@@ -9,10 +9,11 @@ directly instead of generating or baking quote lists into templates.
 ```text
 sources/
 └── disco-elysium/
-		├── images/                 # Source-specific portraits and artwork
-		└── quotes/
-				├── quotes.json         # Canonical quote collection
-				└── speakers.json       # Speaker names and image paths
+	├── images/                 # Source-specific portraits and artwork
+	├── quotes/
+	│   ├── quotes.json         # Canonical quote collection
+	│   └── speakers.json       # Speaker names and image paths
+	└── templates/              # Layouts that render a selected quote
 
 helpers/                        # Optional curation and image-processing tools
 ├── data/                       # Local pipeline inputs/outputs
@@ -22,7 +23,9 @@ helpers/                        # Optional curation and image-processing tools
 Each new quote collection gets its own directory under `sources/`, with its
 own `quotes/` and `images/` directories (for example `max-payne/`). Keep
 source-specific data together; do not add another source's quotes or artwork
-to the Disco Elysium files.
+to the Disco Elysium files. Add a source-specific `templates/` directory when
+that collection needs its own TRMNL layouts; layouts do not need to be generic
+across different sources.
 
 ## Loading quotes
 
@@ -49,6 +52,17 @@ const quote = pool[Math.floor(Math.random() * pool.length)];
 ```
 
 Alternatively, bundle/import the JSON file in the consuming application.
+
+## Templates
+
+The Disco Elysium layouts are in
+[`sources/disco-elysium/templates/`](sources/disco-elysium/templates/). They
+render the `quote` object supplied by the polling/API layer and contain no
+quote corpus or random selection logic. That layer should read the source JSON,
+select a quote, and return the normalized `{"quote": ...}` payload. The old
+generated static templates were not migrated because they duplicate the quote
+data in Liquid. Other sources can have their own Liquid files and image paths
+rather than sharing a source-selecting template.
 
 Quote entries currently have this shape:
 
