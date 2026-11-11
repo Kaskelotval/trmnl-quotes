@@ -1,0 +1,490 @@
+{
+  "_readme": "Seed quotes gathered from public fan compilations (TVTropes' Disco Elysium quotes page, a Steam Community guide, Reddit community discussions), used ONLY as search keys to locate the real, verbatim line in disco.db -- per the pipeline doc's rule, an externally-sourced quote is not trusted until matched against the actual game data. 'mentions' is not real Reddit/upvote telemetry -- it's just how many times I personally saw that exact quote independently repeated across the ~2 pages I fetched (main list + reader comments), which is a weak but real and non-fabricated signal. Treat it as a tiebreaker, not a ranking system. 'text' may contain paraphrase drift, censored profanity (Steam censors with hearts), or markdown emphasis from the source -- 5_community_match.py normalizes and fuzzy-matches this against the real corpus rather than trusting it verbatim.",
+  "seeds": [
+    {
+      "text": "No. This is somewhere to be. This is all you have, but it's still something. Streets and sodium lights. The sky, the world. You're still alive.",
+      "claimed_speaker": "Volition",
+      "mentions": 14,
+      "sources": [
+        "tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium",
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "Sorry. You're not coming up with anything. Again, the pieces are there: she could have done it, somehow, something else, wala-wala-bing-bang — it's just not coming together.",
+      "claimed_speaker": "Logic",
+      "mentions": 2,
+      "sources": ["tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium", "steamcommunity.com guide 3378718338 (paraphrased in comments)"]
+    },
+    {
+      "text": "The road to healing is going to be a long one. Stay the course. You will make it, some day.",
+      "claimed_speaker": "Volition",
+      "mentions": 24,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": " This hurts. It should. Apologize and try to make it right.",
+      "claimed_speaker": "Volition",
+      "mentions": 24,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "I don't want to get better, I want to get worse.",
+      "claimed_speaker": "You",
+      "mentions": 12,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "I don't want to be this kind of animal anymore.",
+      "claimed_speaker": "You",
+      "mentions": 11,
+      "sources": [
+        "reddit.com/r/DiscoElysium",
+        "tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium"
+      ]
+    },
+    {
+      "text": "A tremendous loneliness comes over you. Everybody in the world is doing something without you.",
+      "claimed_speaker": "Inland Empire",
+      "mentions": 10,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "TRUE LOVE IS POSSIBLE ONLY IN THE NEXT WORLD -- FOR NEW PEOPLE IT IS TOO LATE FOR US WREAK HAVOC ON THE MIDDLE CLASS.",
+      "claimed_speaker": "Cindy the Skull",
+      "mentions": 9,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "UN JOUR SERAI DE RETOUR PRÈS DE TOI",
+      "claimed_speaker": "Cindy the Skull",
+      "mentions": 8,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "Real darkness has love for a face. The first death is in the heart, Harry.",
+      "claimed_speaker": "Dolores Dei",
+      "mentions": 8,
+      "sources": [
+        "reddit.com/r/DiscoElysium",
+        "tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium"
+      ]
+    },
+    {
+      "text": "All the gifts your parents gave you, all the love and patience of your friends, you drowned in a neurotoxin. You let misery win. And it will keep on winning till you die -- or overcome it.",
+      "claimed_speaker": "Rigorous Self-Critique",
+      "mentions": 7,
+      "sources": [
+        "reddit.com/r/DiscoElysium",
+        "tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium"
+      ]
+    },
+    {
+      "text": "Brother, you already were a ghost. Up there, screaming -- along with all of them. Scaring each other. Haunting each other. It's the living who are ghosts. The dead are silent. They don't rattle windows or write letters in blood. The living do. Leave them behind. Rest.",
+      "claimed_speaker": "Ancient Reptilian Brain",
+      "mentions": 7,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "The world's most precious material, reserved for those she lets close enough to feel it. You are stealing a touch. It's not yours to take.",
+      "claimed_speaker": "Conceptualization",
+      "mentions": 6,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "The man does not know the bullet has entered his brain. He never will. Death comes faster than the realization.",
+      "claimed_speaker": "Visual Calculus",
+      "mentions": 6,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "You -- against the atom, the charm and the spin. Where the whole world failed -- matter failed to bend to human will; human will failed to get out of bed and tie its laces -- you alone, single-handedly, will rebuild the dreams of the working class. You are The Last Communist. Now get to work, comrade.",
+      "claimed_speaker": "Rhetoric",
+      "mentions": 6,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "Do it for the picture puzzle. Put it all together. Solve the world. One conversation at a time.",
+      "claimed_speaker": "Logic",
+      "mentions": 5,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "Your mangled brain would like you to know there is a boxer called Contact Mike.",
+      "claimed_speaker": "Encyclopedia",
+      "mentions": 5,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "This is a very, very sad man who has just seen something that's made him forget his sadness.",
+      "claimed_speaker": "Empathy",
+      "mentions": 5,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "And you? Is it an honour to work with you? Don't ask him, ask yourself.",
+      "claimed_speaker": "Authority",
+      "mentions": 4,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "This was not about failure or success. This was always going to be horror. I should not have suggested it, and you should not have listened to me.",
+      "claimed_speaker": "Suggestion",
+      "mentions": 4,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "If an assault were launched on this building right now -- if the windows came crashing down and the whole world descended upon you -- this man would hurl himself in death's way to save you.",
+      "claimed_speaker": "Esprit de Corps",
+      "mentions": 6,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "I am a fragment of the world spirit, the genius loci of Revachol. My heart is the wind corridor. The bottom of my air is red. I have a hundred thousand luminous arms.",
+      "claimed_speaker": "Shivers",
+      "mentions": 6,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "Think about the seagull's story. It's one of endurance -- and adaptation. The seaside was paradise once. They were birds of that paradise. Then their paradise became shit city.",
+      "claimed_speaker": "Endurance",
+      "mentions": 4,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "There's tenderness in the carabineer's look. Tenderness that's curdled into pain or something darker. Even worse, a love aborted and smothered, stamped beneath his brilliant boot heel.",
+      "claimed_speaker": "Pain Threshold",
+      "mentions": 4,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "Cold and heavy -- like truth.",
+      "claimed_speaker": "Physical Instrument",
+      "mentions": 3,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "The funk soul brother at the back of his head has gone dark. Forever.",
+      "claimed_speaker": "Electrochemistry",
+      "mentions": 5,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "The moral of our encounter is: I am a relatively median lifeform, while you are extreme, all-engulfing madness. A volatile simian nervous system, ominously new to the planet.",
+      "claimed_speaker": "Insulindian Phasmid",
+      "mentions": 7,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "You are a violent and irrepressible miracle. The vacuum of cosmos and the stars burning in it are afraid of you. Given enough time you would wipe us all out and replace us with nothing -- just by accident.",
+      "claimed_speaker": "Insulindian Phasmid",
+      "mentions": 8,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "HARDCORE TO THE MEGA!",
+      "claimed_speaker": "Egg Head",
+      "mentions": 9,
+      "sources": [
+        "reddit.com/r/DiscoElysium",
+        "steamcommunity.com guide 3378718338"
+      ]
+    },
+    {
+      "text": "It's worrying. Especially considering his political views. Detective Du Bois is -- as you may know -- a Mazovian socio-economist. He wants to liquidate the ruling class. Which -- again -- for a police officer... is a little odd.",
+      "claimed_speaker": "Kim Kitsuragi",
+      "mentions": 6,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "It's easier to mock someone than admit that the world might be more interesting than you imagined.",
+      "claimed_speaker": "Kim Kitsuragi",
+      "mentions": 6,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "Mankind, be vigilant. We loved you.",
+      "claimed_speaker": "Inland Empire",
+      "mentions": 6,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "Men without ideals are only animals.",
+      "claimed_speaker": "The Deserter",
+      "mentions": 1,
+      "sources": ["tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium"]
+    },
+    {
+      "text": "It's not un-proletarian to feel something.",
+      "claimed_speaker": "The Deserter",
+      "mentions": 1,
+      "sources": ["tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium"]
+    },
+    {
+      "text": "The mask of humanity fall from capital. It has to take it off to kill everyone -- everything you love; all the hope and tenderness in the world. It has to take it off, just for one second. To do the deed.",
+      "claimed_speaker": "The Deserter",
+      "mentions": 1,
+      "sources": ["steamcommunity.com guide 3378718338"]
+    },
+    {
+      "text": "In dark times, should the stars too go out?",
+      "claimed_speaker": "Steban",
+      "mentions": 6,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "God is in his heaven. Everything is normal on Earth.",
+      "claimed_speaker": "Moralism / Coalition",
+      "mentions": 4,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "This is a man with a lot of past, but little present. And almost no future.",
+      "claimed_speaker": "Inland Empire",
+      "mentions": 5,
+      "sources": [
+        "tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium"
+      ]
+    },
+    {
+      "text": "It's death -- but for the Universe? Oh, we're contemplating the living shit out of this.",
+      "claimed_speaker": "Conceptualization",
+      "mentions": 4,
+      "sources": [
+        "tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium"
+      ]
+    },
+    {
+      "text": " It's the *world*, Harry-boy. And you're *made* of it. Every day you're out there you make more of yourself from it. I'm afraid you can't be *unmade* now.",
+      "claimed_speaker": "Ancient Reptilian Brain",
+      "mentions": 5,
+      "sources": [
+        "tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium"
+      ]
+    },
+    {
+      "text": "There is nothing. Only warm, primordial blackness.",
+      "claimed_speaker": "Ancient Reptilian Brain",
+      "mentions": 5,
+      "sources": [
+        "tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium"
+      ]
+    },
+    {
+      "text": "That we continue to persist at all is a testament to our faith in one another.",
+      "claimed_speaker": "Volition",
+      "mentions": 4,
+      "sources": [
+        "tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium"
+      ]
+    },
+    {
+      "text": "Don't expect any further rewards or handclaps. This is how normal people are all the time.",
+      "claimed_speaker": "Kim Kitsuragi",
+      "mentions": 6,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "A hug a day keeps the bourgeoisie away.",
+      "claimed_speaker": "You",
+      "mentions": 4,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "Subdue the regret. Dust yourself off, proceed. You'll get it in the next life, where you don't make mistakes. Do what you can with this one, while you're alive.",
+      "claimed_speaker": "Volition",
+      "mentions": 5,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "Detective, each of us has our part to play in the world. My part is to solve crimes. I am under no illusion that my role isn't a minor one, in the scheme of things...",
+      "claimed_speaker": "Kim Kitsuragi",
+      "mentions": 1,
+      "sources": ["tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium"]
+    },
+    {
+      "text": "Detective in need of assistance... on the dance floor!",
+      "claimed_speaker": "You",
+      "mentions": 5,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "Everyone knows you can't trust artists. They're nearly as bad as clowns.",
+      "claimed_speaker": "Drama",
+      "mentions": 3,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "He whispers with such predatory hunger it borders on longing.",
+      "claimed_speaker": "Half Light",
+      "mentions": 3,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "0.000% of Communism has been built.",
+      "claimed_speaker": "Rhetoric",
+      "mentions": 5,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "I'm suffocatingly beautiful. And young. And I smell of tutti frutti chewing gum...",
+      "claimed_speaker": "Dolores Dei",
+      "mentions": 4,
+      "sources": [
+        "tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium"
+      ]
+    },
+    {
+      "text": "You can still whistle. Besides, the night is always darkest before the dawn.",
+      "claimed_speaker": "Kim Kitsuragi",
+      "mentions": 3,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "The arthropods are in silent and meaningless awe of you.",
+      "claimed_speaker": "Insulindian Phasmid",
+      "mentions": 4,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "I'm a joke. Look at me.",
+      "claimed_speaker": "The Hanged Man",
+      "mentions": 3,
+      "sources": [
+        "tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium"
+      ]
+    },
+    {
+      "text": "Mercy is rarely a complete mistake.",
+      "claimed_speaker": "Volition",
+      "mentions": 4,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "You're reforging the universe. From the anvil of the heavens to the worms below. Indulge in it. Be bold. Have an impact on the shape of Creation.",
+      "claimed_speaker": "Anti-Object Task Force",
+      "mentions": 3,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "The pale, too, came with you. No one remembers it before you.",
+      "claimed_speaker": "Insulindian Phasmid",
+      "mentions": 4,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "After life, death -- after death, life again. After the world, the pale -- after the pale, the world again.",
+      "claimed_speaker": "You",
+      "mentions": 5,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text": "There was. I think you screamed that you... didn't want to be this type of animal anymore. I may have misheard, but it was sort of memorable.",
+      "claimed_speaker": "Klaasje",
+      "mentions": 5,
+      "sources": [
+        "reddit.com/r/DiscoElysium"
+      ]
+    },
+    {
+      "text":  "Oh, yes. This is real darkness. It's not death, or war, or child molestation. Real darkness has love for a face. The first death is in the heart, Harry.",
+      "claimed_speaker": "Dolores Dei",
+      "mentions": 2,
+      "sources": ["tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium", "steamcommunity.com guide 3378718338"]
+    },
+    {
+      "text":  "You're a man with a fork in a world of soup.",
+      "claimed_speaker": "Gaston Martin",
+      "mentions": 2,
+      "sources": ["tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium", "steamcommunity.com guide 3378718338"]
+    },
+      {
+      "text": "The limbed and headed machine of pain and undignified suffering is firing up again. It wants to walk the desert. Hurting. Longing. Dancing to disco music.",
+      "claimed_speaker": "Ancient Reptilian Brain",
+      "mentions": 2,
+      "sources": ["tvtropes.org/pmwiki/pmwiki.php/Quotes/DiscoElysium", "steamcommunity.com guide 3378718338"]
+    }
+  ]
+}

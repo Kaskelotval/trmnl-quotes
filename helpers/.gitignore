@@ -1,0 +1,12 @@
+/data/raw/*
+!/data/raw/.gitkeep
+/data/normalized/*
+!/data/normalized/.gitkeep
+/data/candidates/*
+!/data/candidates/.gitkeep
+/data/curated/*
+!/data/curated/.gitkeep
+/data/speakers_raw.json
+/data/history.local.json
+/portraits_raw/*
+!/portraits_raw/.gitkeep
