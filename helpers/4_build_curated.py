@@ -98,15 +98,10 @@ def main():
 
         quotes_by_id[f"dialogue-{cid}"] = {
             "id": f"dialogue-{cid}",
-            "status": "approved",
             "type": "single",
             "text": node.get("text", "").strip(),
             "speaker": speaker_id,
-            "game": "Disco Elysium",
             "location": node.get("location"),
-            "context": node.get("context"),
-            "source_id": cid,
-            "display_safe": True,
         }
 
     quotes = list(quotes_by_id.values())

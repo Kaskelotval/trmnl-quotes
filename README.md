@@ -37,18 +37,15 @@ raw JSON URL is:
 
 `https://raw.githubusercontent.com/Kaskelotval/trmnl-quotes/main/sources/disco-elysium/quotes/quotes.json`
 
-For example, a consumer can fetch the live collection and select a safe,
-approved quote like this:
+For example, a consumer can fetch the live collection and select a quote like
+this:
 
 ```js
 const response = await fetch(
 	"https://raw.githubusercontent.com/Kaskelotval/trmnl-quotes/main/sources/disco-elysium/quotes/quotes.json",
 );
 const { quotes } = await response.json();
-const pool = quotes.filter(
-	(quote) => quote.status === "approved" && quote.display_safe !== false,
-);
-const quote = pool[Math.floor(Math.random() * pool.length)];
+const quote = quotes[Math.floor(Math.random() * quotes.length)];
 ```
 
 Alternatively, bundle/import the JSON file in the consuming application.
@@ -90,17 +87,17 @@ Quote entries currently have this shape:
 ```json
 {
 	"id": "dialogue-467:23",
-	"status": "approved",
 	"type": "single",
 	"text": "A quote goes here.",
 	"speaker": "volition",
-	"game": "Disco Elysium",
-	"location": "Optional location",
-	"context": null,
-	"source_id": "467:23",
-	"display_safe": true
+	"location": "Optional location"
 }
 ```
+
+Each source's quote file contains only quotes intended for display, so it does
+not repeat the source name or store per-quote approval/safety flags. `id` must
+be unique within the source; `type` is retained to allow future exchange-style
+quotes.
 
 Speaker metadata lives in
 [`sources/disco-elysium/quotes/speakers.json`](sources/disco-elysium/quotes/speakers.json).
