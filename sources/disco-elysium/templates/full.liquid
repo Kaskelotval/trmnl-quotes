@@ -1,10 +1,12 @@
-{% assign speaker = quote.speaker %}
-{% if quote.type == "exchange" %}
-  {% assign speaker = quote.primary_speaker %}
-{% endif %}
-{% assign portrait_url = speaker.image %}
-{% if portrait_url contains "../images/" %}
-  {% assign portrait_path = portrait_url | remove_first: "../" %}
+{% assign quote_list = IDX_0.quotes %}
+{% assign quote_count = quote_list.size | minus: 1 %}
+{% assign quote_index = 0 | random_number: quote_count | plus: 0 %}
+{% assign quote = quote_list[quote_index] %}
+{% assign speaker = IDX_1[quote.speaker] %}
+{% assign speaker_name = speaker.name | default: quote.speaker %}
+{% assign portrait_url = "" %}
+{% if speaker.image %}
+  {% assign portrait_path = speaker.image | remove_first: "../" %}
   {% capture portrait_url %}https://raw.githubusercontent.com/Kaskelotval/trmnl-quotes/main/sources/disco-elysium/{{ portrait_path }}{% endcapture %}
 {% endif %}
 <style>
@@ -14,28 +16,22 @@
   .quote-text { font-size: 34px; font-weight: 600; line-height: 1.25; white-space: pre-wrap; }
 </style>
 <div class="layout">
-  <div class="columns" style="padding: 2em; align-items: center;">
-    {% if portrait_url %}
-      <div class="column portrait-col">
-        <img class="image portrait" src="{{ portrait_url }}" alt="{{ speaker.name | escape }}">
-      </div>
-    {% endif %}
-    <div class="column quote-col" style="{% unless portrait_url %}width: 100%;{% endunless %}">
-      <div class="markdown">
-        <div class="content quote-text">
-          {% if quote.type == "exchange" %}
-            {% for line in quote.lines %}
-              <p><strong>{{ line.speaker.name | escape }}:</strong> {{ line.text | escape }}</p>
-            {% endfor %}
-          {% else %}
-            {{ quote.text | escape }}
+  {% if quote %}
+    <div class="columns" style="padding: 2em; align-items: center;">
+      {% if portrait_url != "" %}
+        <div class="column portrait-col">
+          <img class="image portrait" src="{{ portrait_url }}" alt="{{ speaker_name | escape }}">
+        </div>
+      {% endif %}
+      <div class="column quote-col" style="{% if portrait_url == "" %}width: 100%;{% endif %}">
+        <div class="markdown">
+          <div class="content quote-text">{{ quote.text | escape }}</div>
+          <span class="label label--underline" style="margin-top: 12px; display: block;">— {{ speaker_name | escape }}</span>
+          {% if quote.location %}
+            <span class="label" style="font-size: 13px; opacity: 0.7; display: block; margin-top: 6px;">{{ quote.location | escape }}</span>
           {% endif %}
         </div>
-        <span class="label label--underline" style="margin-top: 12px; display: block;">— {{ speaker.name | escape }}</span>
-        {% if quote.location %}
-          <span class="label" style="font-size: 13px; opacity: 0.7; display: block; margin-top: 6px;">{{ quote.location | escape }}</span>
-        {% endif %}
       </div>
     </div>
-  </div>
+  {% endif %}
 </div>

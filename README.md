@@ -57,12 +57,33 @@ Alternatively, bundle/import the JSON file in the consuming application.
 
 The Disco Elysium layouts are in
 [`sources/disco-elysium/templates/`](sources/disco-elysium/templates/). They
-render the `quote` object supplied by the polling/API layer and contain no
-quote corpus or random selection logic. That layer should read the source JSON,
-select a quote, and return the normalized `{"quote": ...}` payload. The old
-generated static templates were not migrated because they duplicate the quote
-data in Liquid. Other sources can have their own Liquid files and image paths
-rather than sharing a source-selecting template.
+use two TRMNL Polling responses: `IDX_0` for the quote collection and `IDX_1`
+for the speaker registry. Each layout selects a random quote, looks up the
+speaker by slug, and builds its portrait URL from the speaker's relative image
+path. No quote API or quote-baking step is needed. The old generated static
+templates were not migrated because they duplicated the quote data in Liquid.
+Other sources can have their own Liquid files and image paths rather than
+sharing a source-selecting template.
+
+### Configure a TRMNL Private Plugin
+
+Choose the **Polling** strategy and put these two URLs in the Polling URL box,
+one URL per line (keep this order so the responses are `IDX_0` and `IDX_1`):
+
+```text
+https://raw.githubusercontent.com/Kaskelotval/trmnl-quotes/main/sources/disco-elysium/quotes/quotes.json
+https://raw.githubusercontent.com/Kaskelotval/trmnl-quotes/main/sources/disco-elysium/quotes/speakers.json
+```
+
+Then paste each matching file from `sources/disco-elysium/templates/` into its
+layout tab in TRMNL. These are source-specific layouts; for another source,
+provide its quote and speaker JSON URLs and make corresponding templates if
+the data or image paths differ. **Static Data does not fetch URLs stored inside
+its JSON**; use Polling for these repository files.
+
+TRMNL's Liquid random selection happens when it renders a screen. If TRMNL skips
+rendering because the polled JSON responses have not changed, the chosen quote
+may not rotate on every scheduled poll; verify refresh behavior with the plugin.
 
 Quote entries currently have this shape:
 
