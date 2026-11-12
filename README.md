@@ -23,9 +23,9 @@ helpers/                        # Optional curation and image-processing tools
 Each new quote collection gets its own directory under `sources/`, with its
 own `quotes/` and `images/` directories (for example `max-payne/`). Keep
 source-specific data together; do not add another source's quotes or artwork
-to the Disco Elysium files. Add a source-specific `templates/` directory when
-that collection needs its own TRMNL layouts; layouts do not need to be generic
-across different sources.
+to the Disco Elysium files. Shared Liquid layouts live in the project-root
+`liquids/` directory so they can be reused across sources when the payload
+contract matches.
 
 ## Loading quotes
 
@@ -52,15 +52,14 @@ Alternatively, bundle/import the JSON file in the consuming application.
 
 ## Templates
 
-The Disco Elysium layouts are in
-[`sources/disco-elysium/templates/`](sources/disco-elysium/templates/). They
-use two TRMNL Polling responses: `IDX_0` for the quote collection and `IDX_1`
-for the speaker registry. Each layout selects a random quote, looks up the
-speaker by slug, and builds its portrait URL from the speaker's relative image
-path. No quote API or quote-baking step is needed. The old generated static
-templates were not migrated because they duplicated the quote data in Liquid.
-Other sources can have their own Liquid files and image paths rather than
-sharing a source-selecting template.
+The reusable Disco Elysium layouts are in
+[`liquids/`](liquids/). They use two TRMNL Polling responses: `IDX_0` for the
+quote collection and `IDX_1` for the speaker registry. Each layout selects a
+random quote, looks up the speaker by slug, and builds its portrait URL from the
+speaker's relative image path. No quote API or quote-baking step is needed. The
+old generated static templates were not migrated because they duplicated the
+quote data in Liquid. As long as another source follows the same JSON contract,
+those shared Liquid files can be pointed at a different source's polling URLs.
 
 ### Configure a TRMNL Private Plugin
 
@@ -72,11 +71,10 @@ https://raw.githubusercontent.com/Kaskelotval/trmnl-quotes/main/sources/disco-el
 https://raw.githubusercontent.com/Kaskelotval/trmnl-quotes/main/sources/disco-elysium/quotes/speakers.json
 ```
 
-Then paste each matching file from `sources/disco-elysium/templates/` into its
-layout tab in TRMNL. These are source-specific layouts; for another source,
-provide its quote and speaker JSON URLs and make corresponding templates if
-the data or image paths differ. **Static Data does not fetch URLs stored inside
-its JSON**; use Polling for these repository files.
+Then paste each matching file from `liquids/` into its layout tab in TRMNL.
+These are reusable layouts; for another source, provide its quote and speaker
+JSON URLs as long as the data contract matches. **Static Data does not fetch
+URLs stored inside its JSON**; use Polling for these repository files.
 
 TRMNL's Liquid random selection happens when it renders a screen. If TRMNL skips
 rendering because the polled JSON responses have not changed, the chosen quote

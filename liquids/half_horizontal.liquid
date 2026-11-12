@@ -9,26 +9,28 @@
   {% assign portrait_path = speaker.image | remove_first: "../" %}
   {% capture portrait_url %}https://raw.githubusercontent.com/Kaskelotval/trmnl-quotes/main/sources/disco-elysium/{{ portrait_path }}{% endcapture %}
 {% endif %}
-{% assign show_portrait = false %}
-{% if portrait_url != "" and quote.text.size <= 90 %}
-  {% assign show_portrait = true %}
-{% endif %}
 <style>
-  .portrait { width: 96px; height: 96px; object-fit: cover; margin: auto; }
-  .quote-text { font-size: 17px; font-weight: 600; line-height: 1.15; white-space: pre-wrap; }
+  .portrait { width: 140px; height: 140px; object-fit: cover; margin: auto; }
+  .portrait-col { width: 28%; }
+  .quote-col { width: 72%; }
 </style>
 <div class="layout">
   {% if quote %}
-    <div class="columns" style="padding: 1em; align-items: center;">
-      {% if show_portrait %}
-        <div class="column" style="width: 30%;">
+    {% if quote.text.size > 150 %}
+      {% assign quote_size = "title--small lg:title--large" %}
+    {% else %}
+      {% assign quote_size = "title lg:title--xlarge" %}
+    {% endif %}
+    <div class="columns" style="padding: 1.5em; align-items: center;">
+      {% if portrait_url != "" %}
+        <div class="column portrait-col">
           <img class="image portrait" src="{{ portrait_url }}" alt="{{ speaker_name | escape }}">
         </div>
       {% endif %}
-      <div class="column" style="{% if show_portrait %}width: 70%;{% else %}width: 100%;{% endif %}">
+      <div class="column quote-col" style="{% if portrait_url == "" %}width: 100%;{% endif %}">
         <div class="markdown">
-          <div class="content quote-text">{{ quote.text | escape }}</div>
-          <span class="label" style="display: block; margin-top: 6px;">— {{ speaker_name | escape }}</span>
+          <div class="title {{ quote_size }}" style="white-space: pre-wrap;">{{ quote.text | escape }}</div>
+          <span class="label lg:label--large" style="display: block; margin-top: 6px;">— {{ speaker_name | escape }}</span>
         </div>
       </div>
     </div>

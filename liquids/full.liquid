@@ -13,10 +13,14 @@
   .portrait { width: 220px; height: 220px; object-fit: cover; margin: auto; }
   .portrait-col { width: 28%; }
   .quote-col { width: 72%; }
-  .quote-text { font-size: 34px; font-weight: 600; line-height: 1.25; white-space: pre-wrap; }
 </style>
 <div class="layout">
   {% if quote %}
+    {% if quote.text.size > 150 %}
+      {% assign quote_size = "title--base lg:title--xlarge" %}
+    {% else %}
+      {% assign quote_size = "title--large lg:title--xxlarge" %}
+    {% endif %}
     <div class="columns" style="padding: 2em; align-items: center;">
       {% if portrait_url != "" %}
         <div class="column portrait-col">
@@ -25,10 +29,10 @@
       {% endif %}
       <div class="column quote-col" style="{% if portrait_url == "" %}width: 100%;{% endif %}">
         <div class="markdown">
-          <div class="content quote-text">{{ quote.text | escape }}</div>
-          <span class="label label--underline" style="margin-top: 12px; display: block;">— {{ speaker_name | escape }}</span>
+          <div class="title {{ quote_size }}" style="white-space: pre-wrap;">{{ quote.text | escape }}</div>
+          <span class="label lg:label--large" style="margin-top: 12px; display: block;">— {{ speaker_name | escape }}</span>
           {% if quote.location %}
-            <span class="label" style="font-size: 13px; opacity: 0.7; display: block; margin-top: 6px;">{{ quote.location | escape }}</span>
+            <span class="description lg:description--xlarge" style="display: block; margin-top: 6px;">{{ quote.location | escape }}</span>
           {% endif %}
         </div>
       </div>
