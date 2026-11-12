@@ -1,0 +1,18 @@
+---
+strategy: polling
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: ''
+polling_verb: get
+framework_version: 3.4.6
+serverless_language: ''
+refresh_interval_floor: ''
+polling_url: "https://raw.githubusercontent.com/Kaskelotval/trmnl-quotes/main/sources/disco-elysium/quotes/quotes.json\r\nhttps://raw.githubusercontent.com/Kaskelotval/trmnl-quotes/main/sources/disco-elysium/quotes/speakers.json"
+polling_headers: ''
+polling_body: ''
+id: 538190
+oauth_enabled: 'false'
+oauth_pkce_enabled: 'no'
+name: kaskelots-quotes
+description: https://github.com/Kaskelotval/trmn
+refresh_interval: 15
