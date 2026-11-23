@@ -30,24 +30,24 @@
       "location": "BOOKSTORE / MAP WALL"
     },
     {
-      "id": "dialogue-670:347",
-      "type": "single",
-      "text": "\"Harry, I don't want things. I want to go to the aerodrome.\"",
-      "speaker": "dolores_dei",
-      "location": "DREAM SEAFORT / DOLORES DEI"
-    },
-    {
-      "id": "dialogue-645:13",
-      "type": "single",
-      "text": "But why? None of this belongs to anyone anymore.",
-      "speaker": "shivers",
-      "location": "WHIRLING F3 ORB / peephole shivers"
-    },
-    {
       "id": "dialogue-683:12",
       "type": "single",
       "text": "A tremendous loneliness comes over you. Everybody in the world is doing something without you.",
       "speaker": "inland_empire",
+      "location": "WHIRLING F2 / KLAASJE DOOR"
+    },
+    {
+      "id": "dialogue-879:8",
+      "type": "single",
+      "text": " The door is indifferent to your loneliness. The world does not care. ",
+      "speaker": "door",
+      "location": "WHIRLING F2 / KLAASJE DOOR"
+    },
+    {
+      "id": "dialogue-879:8",
+      "type": "single",
+      "text": "The door is mute and indifferent. Your despair is a joke to it. ",
+      "speaker": "door",
       "location": "WHIRLING F2 / KLAASJE DOOR"
     },
     {
@@ -79,46 +79,11 @@
       "location": "SEAFORT / INSULINDIAN PHASMID"
     },
     {
-      "id": "dialogue-1245:161",
-      "type": "single",
-      "text": "None that you've found thus far. But that doesn't mean there aren't any.",
-      "speaker": "visual_calculus",
-      "location": "WHIRLING F3 / CLEAR WINDOW VISCAL DIFFICULT"
-    },
-    {
-      "id": "dialogue-1007:2",
-      "type": "single",
-      "text": "(Sings.) \"Our bar, our bar, Hardie bar!\"",
-      "speaker": "eugene",
-      "location": "WHIRLING F1 / EUGENE barks"
-    },
-    {
       "id": "dialogue-1316:546",
       "type": "single",
-      "text": "The moral of our encounter is: I am a relatively median lifeform, while you are extreme, all-engulfing madness. A volatile simian nervous system, ominously new to the planet.",
+      "text": "I am a relatively median lifeform, while you are extreme, all-engulfing madness. A volatile simian nervous system, ominously new to the planet.",
       "speaker": "insulindian_phasmid",
       "location": "SEAFORT / INSULINDIAN PHASMID"
-    },
-    {
-      "id": "dialogue-670:90",
-      "type": "single",
-      "text": "\"You have to take care of yourself. You're not a young man anymore. If you keep going like this you'll...\" She falls silent.",
-      "speaker": "dolores_dei",
-      "location": "DREAM SEAFORT / DOLORES DEI"
-    },
-    {
-      "id": "dialogue-417:28",
-      "type": "single",
-      "text": "Before you can reply he's already furiously scribbling something on the paper. When he hands the document back to you, the signature — in upper case letters — reads: \"DON'T CALL ABIGAIL.\"",
-      "speaker": "rosemary",
-      "location": "VILLAGE / IDIOT DOOM SPIRAL"
-    },
-    {
-      "id": "dialogue-670:634",
-      "type": "single",
-      "text": "The world's most precious material, reserved for those she lets close enough to feel it. You are stealing a touch. It's not yours to take.",
-      "speaker": "conceptualization",
-      "location": "DREAM SEAFORT / DOLORES DEI"
     },
     {
       "id": "dialogue-1245:77",
@@ -156,60 +121,11 @@
       "location": "WHIRLING / KIM INTRO"
     },
     {
-      "id": "dialogue-588:677",
-      "type": "single",
-      "text": "MY HEART IS THE WIND CORRIDOR. THE BOTTOM OF MY AIR IS RED. I HAVE A HUNDRED THOUSAND LUMINOUS ARMS.",
-      "speaker": "shivers",
-      "location": "ICE / ANDRE WHITE CHECKS"
-    },
-    {
-      "id": "dialogue-626:190",
-      "type": "single",
-      "text": "\"Anything else I can do for you?\"",
-      "speaker": "frittte_clerk",
-      "location": "FRITTE / FRITTE CLERK"
-    },
-    {
-      "id": "dialogue-586:210",
-      "type": "single",
-      "text": "It'll be easier to break the staple than the lock. Also — that sticker is interesting, somehow...",
-      "speaker": "interfacing",
-      "location": "ICE / CHURCH DOOR"
-    },
-    {
-      "id": "dialogue-1016:63",
-      "type": "single",
-      "text": "\"Don't disrespect Miss LePlante, copper.\" The big man finishes off a can. \"She's good people. We all get a little crazy sometimes.\"",
-      "speaker": "titus_hardie",
-      "location": "WHIRLING F1 / ADDITIONAL CONTENT"
-    },
-    {
       "id": "dialogue-1203:29",
       "type": "single",
       "text": "Do it for the picture puzzle. Put it all together. Solve the world. One conversation at a time.",
       "speaker": "logic",
       "location": "WHIRLING F2 / DREAM 4"
-    },
-    {
-      "id": "dialogue-569:6",
-      "type": "single",
-      "text": "Your mangled brain would like you to know there is a boxer called Contact Mike.",
-      "speaker": "encyclopedia",
-      "location": "ICE / ACELE ON ICE"
-    },
-    {
-      "id": "dialogue-638:159",
-      "type": "single",
-      "text": "This is a very, very sad man who has just seen something that's made him forget his sadness.",
-      "speaker": "empathy",
-      "location": "VILLAGE / POSSE 2"
-    },
-    {
-      "id": "dialogue-703:397",
-      "type": "single",
-      "text": "The *funk soul brother* at the back of his head has gone dark. Forever.",
-      "speaker": "electrochemistry",
-      "location": "YARD / HANGED MAN BULLET"
     },
     {
       "id": "dialogue-610:54",
@@ -246,34 +162,7 @@
       "speaker": "inland_empire",
       "location": "PIER / JOYCE ON EVRART"
     },
-    {
-      "id": "dialogue-863:50",
-      "type": "single",
-      "text": "There's nothing on his wrist.",
-      "speaker": "reaction_speed",
-      "location": "YARD / CUNO FRIDGE"
-    },
-    {
-      "id": "dialogue-794:84",
-      "type": "single",
-      "text": "Of course, yes. Better not risk it.",
-      "speaker": "logic",
-      "location": "JAM / faln sneakers on a pedestal of speakers"
-    },
-    {
-      "id": "dialogue-1245:362",
-      "type": "single",
-      "text": "\"Fuck yeah I'm in.\" He spits on the floor.",
-      "speaker": "cuno",
-      "location": "WHIRLING F3 / CLEAR WINDOW VISCAL DIFFICULT"
-    },
-    {
-      "id": "dialogue-670:627",
-      "type": "single",
-      "text": "This was not about failure or success. This was always going to be horror. I should not have suggested it, and you should not have listened to me.",
-      "speaker": "suggestion",
-      "location": "DREAM SEAFORT / DOLORES DEI"
-    },
+
     {
       "id": "dialogue-825:328",
       "type": "single",
@@ -284,44 +173,30 @@
     {
       "id": "dialogue-307:8",
       "type": "single",
-      "text": "Think about the seagull's story. It's one of endurance — and adaptation. The seaside was paradise once. They were birds of that paradise.",
+      "text": "Think about the seagull's story. It's one of endurance — and adaptation. The seaside was paradise once. They were birds of that paradise. Then their paradise became *shit city*. And what did they do? They became urban survivors! Eating burgers out of trash cans! Killing and eating pigeons!  No time for that sentimental bullshit. They're hustlers, getting shit done. They're one pair of track pants away from gangsters. Just like you.",
+      "speaker": "endurance",
+      "location": "COAST ORB / seagull"
+    },
+    {
+      "id": "dialogue-307:8",
+      "type": "single",
+      "text": " Own it! Steal hot dogs, shit in the sand -- whatever it takes to keep going!",
+      "speaker": "endurance",
+      "location": "COAST ORB / seagull"
+    },
+    {
+      "id": "dialogue-307:8",
+      "type": "single",
+      "text": "The seagull does what it takes -- and so do you. You've got that same spirit in you. When the time comes, you'll push yourself.",
       "speaker": "endurance",
       "location": "COAST ORB / seagull"
     },
     {
       "id": "dialogue-1264:915",
       "type": "single",
-      "text": "Maybe. Maybe not. Mercy is rarely a *complete* mistake.",
+      "text": "Mercy is rarely a *complete* mistake.",
       "speaker": "volition",
       "location": "WHIRLING F3 / KLAASJE FULL STORY"
-    },
-    {
-      "id": "dialogue-1264:334",
-      "type": "single",
-      "text": "She blinks. Everything is silent for a second.",
-      "speaker": "klaasje",
-      "location": "WHIRLING F3 / KLAASJE FULL STORY"
-    },
-    {
-      "id": "dialogue-728:104",
-      "type": "single",
-      "text": "The words *daredevil driver* sound ominous to you.",
-      "speaker": "inland_empire",
-      "location": "CANAL / MAN ON WATER LOCK"
-    },
-    {
-      "id": "dialogue-879:8",
-      "type": "single",
-      "text": "The walking stops abruptly, but no one comes to the door.",
-      "speaker": "locked_door",
-      "location": "APT / EMPTY ROOM DOOR"
-    },
-    {
-      "id": "dialogue-705:1466",
-      "type": "single",
-      "text": "He sighs. \"Okay. Let's do it the lousy, dangerous way.\"",
-      "speaker": "kim_kitsuragi",
-      "location": "YARD / HANGED MAN"
     },
     {
       "id": "dialogue-1136:63",
@@ -329,20 +204,6 @@
       "text": "\"Hey, we can be just as hard! Like pavement on top of pavement, or a brick on top of another brick.\"",
       "speaker": "pissf_t",
       "location": "PLAZA / PISSFLAUBERT AND FTW"
-    },
-    {
-      "id": "dialogue-576:506",
-      "type": "single",
-      "text": "\"No, it's beautiful. Beautiful and brave! Like we want it to be.\"",
-      "speaker": "andre",
-      "location": "ICE / ANDRE"
-    },
-    {
-      "id": "dialogue-647:16",
-      "type": "single",
-      "text": "\"Downstairs in the hall — next to the main door. One of them even works. I've seen one of the Hardies bang away at it.\"",
-      "speaker": "kim_kitsuragi",
-      "location": "WHIRLING F3 ORB / pinball workshop"
     },
     {
       "id": "dialogue-765:1352",
@@ -364,20 +225,6 @@
       "text": "That felt good. Everyone is a whore. Now punch a hole in the door.",
       "speaker": "half_light",
       "location": "SEAFORT / DESERTER BONUS"
-    },
-    {
-      "id": "dialogue-705:623",
-      "type": "single",
-      "text": "I'm a joke. Look at me.",
-      "speaker": "the_hanged_man",
-      "location": "YARD / HANGED MAN"
-    },
-    {
-      "id": "dialogue-670:411",
-      "type": "single",
-      "text": "\"Call me like that...\"",
-      "speaker": "dolores_dei",
-      "location": "DREAM SEAFORT / DOLORES DEI"
     },
     {
       "id": "dialogue-476:129",
@@ -415,25 +262,11 @@
       "location": "WHIRLING / DREAM1"
     },
     {
-      "id": "dialogue-459:361",
-      "type": "single",
-      "text": "Or a cop with brain damage. One of the two.",
-      "speaker": "encyclopedia",
-      "location": "KINEEMA / SYLVIE"
-    },
-    {
       "id": "dialogue-1315:530",
       "type": "single",
       "text": "\"The mask of humanity fall from capital. It has to take it off to kill everyone — everything you love; all the hope and tenderness in the world. It has to take it off, just for one second. To do the deed.\"",
       "speaker": "the_deserter",
       "location": "SEAFORT / THE DESERTER"
-    },
-    {
-      "id": "dialogue-424:738",
-      "type": "single",
-      "text": "\"Detective, each of us has our part to play in the world. My part is to solve crimes. I am under no illusion that my role isn't a minor one, in the scheme of things...\"",
-      "speaker": "kim_kitsuragi",
-      "location": "JAM / COALITION WARSHIP ARCHER — NOID VERSION"
     },
     {
       "id": "dialogue-1321:263",

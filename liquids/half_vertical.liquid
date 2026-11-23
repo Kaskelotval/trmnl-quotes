@@ -12,6 +12,8 @@
 {% endif %}
 <style>
   .portrait { width: 130px; height: 130px; object-fit: cover;}
+  .quote-text p { margin: 0; }
+  .quote-text p + p { margin-top: 0.5em; }
 </style>
 <div class="layout" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 1.5em;">
   {% if quote %}
@@ -24,7 +26,7 @@
       <img class="image portrait" src="{{ portrait_url }}" alt="{{ speaker_name | escape }}">
     {% endif %}
     <div class="markdown" style="margin-top: 1em;">
-      <div class="title {{ quote_size }}" style="white-space: pre-wrap;">{{ quote.text | escape }}</div>
+      <div class="title {{ quote_size }} quote-text" style="white-space: pre-wrap;">{{ quote.text | markdown_to_html }}</div>
       <span class="label lg:label--large" style="display: block; margin-top: 8px;">— {{ speaker_name | escape }}</span>
       {% if quote.location %}
         <span class="description lg:description--xlarge" style="display: block; margin-top: 4px;">{{ quote.location | escape }}</span>

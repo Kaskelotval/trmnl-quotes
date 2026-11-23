@@ -14,6 +14,8 @@
   .portrait { width: 140px; height: 140px; object-fit: cover; margin: auto; }
   .portrait-col { width: 28%; }
   .quote-col { width: 72%; }
+  .quote-text p { margin: 0; }
+  .quote-text p + p { margin-top: 0.5em; }
 </style>
 <div class="layout">
   {% if quote %}
@@ -30,7 +32,7 @@
       {% endif %}
       <div class="column quote-col" style="{% if portrait_url == "" %}width: 100%;{% endif %}">
         <div class="markdown">
-          <div class="title {{ quote_size }}" style="white-space: pre-wrap;">{{ quote.text | escape }}</div>
+          <div class="title {{ quote_size }} quote-text" style="white-space: pre-wrap;">{{ quote.text | markdown_to_html }}</div>
           <span class="label lg:label--large" style="display: block; margin-top: 6px;">— {{ speaker_name | escape }}</span>
         </div>
       </div>
